@@ -1,0 +1,7 @@
+dados fictícios para aula 02:
+
+id,campanha,cliques,compartilhamentos
+1,acesso-a-informacao,42,8
+2,educacao-publica,36,5
+3,cultura-local,19,3
+
