@@ -6,13 +6,14 @@
 
 ## Dados
 
-**Fonte:** (ex.: exportação do TikTok via Zeeschuimer, Aula 4)
+**Fonte:** exportação do TikTok via Zeeschuimer.
 
 **Período coletado:**
+Alguns minutos do dia 19 de agosto de 2026.
 
-**Tamanho da amostra:** (quantos posts, depois de remover duplicatas)
+**Tamanho da amostra:** 1416 posts
 
-**Limites conhecidos da coleta:** (uma plataforma só? um recorte de hashtag só? poucos dias?)
+**Limites conhecidos da coleta:** dados coletados em somente uma plataforma, com apenas 1416 posts, coletados todos no mesmo dia e horário em alguns minutos e quantidade de posts por hashtag muito vareada.
 
 ## Método
 
