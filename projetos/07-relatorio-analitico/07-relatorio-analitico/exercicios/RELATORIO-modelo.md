@@ -25,7 +25,7 @@ Descreva o que foi calculado e como, incluindo toda decisão de tratamento (dupl
 
 Liste cada achado como uma frase apoiada num número, uma linha de tabela ou um gráfico específico. Anexe ou referencie a tabela (`dados/resumo_hashtags.csv`) e o(s) gráfico(s) (`dados/grafico_relatorio.png` ou outro nome que você tenha usado).
 
-- a taxa de engajamento de grwm é 0,04 maior do que de tutorial (`dados/zeeschuimer-export-tiktok.com-2026-08-19T150132`)
+- a taxa de engajamento de grwm é 0,04 maior do que de tutorial (`dados/resumo_hashtags.csv`)
 - a #tutorial tem um engajamento mais constante do que #grwm (`grafico_comparacao_hashtags`)
 - a #grwm continua sendo usada e tento bons resultados e a #tutorial continua ativa (`grafico_comparacao_hashtags`)
 
@@ -64,7 +64,7 @@ OBS:
 
 **O que mudou no relatório por causa da revisão (ou por que nada mudou):**
 
->
+>Mudei apenas coisas mais técnicas como salvar a tabela em resumo hashtags e mudar no achados, e colocar fonte e período da coleta.
 
 ## Declaração de uso de IA
 
