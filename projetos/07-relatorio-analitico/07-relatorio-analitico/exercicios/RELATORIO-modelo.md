@@ -45,11 +45,22 @@ O que fazer a partir disso. Para cada recomendação, indique de qual achado esp
 
 ## Revisão por pares
 
-**Revisado por:**
+**Revisado por:**   Sabrina Azulay Lewin
 
 **Comentários recebidos:**
 
->
+> Sim, a pergunta está clara e reprodutível.
+> Sim, todos os dados possuem gráficos que os comprovam.
+> Sim, o método está reproduzível.
+> Sim, os achados possuem evidências.
+> Não, as conclusões não extrapolam as evidências.
+> Sim, achado e recomendações estão separados.
+
+OBS:
+> As recomendações não estão com a indicação de qual achado elas dependem.
+> Os gráficos estão sem local e período de coleta
+> As tabelas não estão sendo direcionadas para a pasta dados.
+> A referência de onde o primeiro achado está, não está certa. Deveria ser "dados\resumo_hashtags.csv" (depois de colocar as tabelas feitas na pasta dados)
 
 **O que mudou no relatório por causa da revisão (ou por que nada mudou):**
 
