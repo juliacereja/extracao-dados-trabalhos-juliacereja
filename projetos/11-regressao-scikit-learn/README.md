@@ -1,9 +1,33 @@
-# Aula 11 — Regressão com scikit-learn
+## Parte 6 — README de reprodução
 
-Comece por [11-regressao-scikit-learn.ipynb](11-regressao-scikit-learn.ipynb). A aula abre o bloco de aprendizado de máquina: o que é um modelo supervisionado (features `X` e alvo `y`), o que diferencia regressão de classificação, como derivar features de uma coleta de rede social sem cometer vazamento, e o esqueleto fixo do scikit-learn (`train_test_split`, `fit`, `predict`). Treina uma regressão linear e uma árvore de regressão para estimar a taxa de engajamento de um post, compara as duas com um modelo bobo (prever sempre a média), mostra quando transformar o alvo com `log1p` e como ler os coeficientes sem confundir associação com causa.
 
-Depois faça [exercicios/exercicio-11-regressao-scikit-learn.ipynb](exercicios/exercicio-11-regressao-scikit-learn.ipynb). Ele repete o pipeline na sua própria coleta (a mesma das Aulas 5 a 7): construir o alvo, derivar pelo menos três features próprias sem vazamento, treinar a linear e a árvore, comparar com o modelo bobo e registrar num README quais features você usou e por que descartou as de vazamento.
+**Fonte e período dos dados:**
 
-Use `uv venv .venv` e `uv pip install -r requirements.txt` (a aula precisa de `pandas`, `scikit-learn` e `matplotlib`). O exercício tem seu próprio `requirements.txt` dentro de `exercicios/`, porque essa pasta é copiada isoladamente para o repositório de trabalhos.
+> Dados do TikTok coletados pelo Zeeschuimer, em agosto de 2026.
 
-A pasta `dados/` tem a exportação de exemplo do TikTok (`exportacao.csv`), a mesma usada desde a Aula 5, para todo mundo conseguir rodar a aula sem depender da própria coleta.
+**Quantos posts entraram no modelo (depois de remover duplicata e `plays` = 0):**
+
+> 1416.
+
+**Quais features você usou, e por quê:**
+
+> Usei `n_hashtags`, `tam_legenda`, `seguidores_autor`e `hora`, para verificar se a quantidade de hashtags, o tamanho da legenda, o número de seguidores do autor e o horário da postagem influenciam na taxa de engajamento do post.
+
+**Quais colunas você deixou de fora por vazamento, e por quê:**
+
+> Likes, comments, shares e plays, porque são as features usadas e são definidas somente após a postagem.
+
+**Resultado: MAE e R² do modelo bobo, da linear e da árvore. O seu melhor modelo bateu o bobo?**
+
+Modelo bobo:       MAE = 0.0445   R2 = -0.000
+Regressão linear:  MAE = 0.0440   R2 = 0.012
+Árvore (prof. 5):  MAE = 0.0422   R2 = -0.080
+>O modelo não bateu o bobo, o que mostra que o modelo como um todo está explicando muito pouco da variação dos dados.
+
+**Uma leitura de coeficiente (associação, não causa):**
+
+> Na minha coleta, quanto mais hashtags, menor o engajamento.
+
+**Declaração de uso de IA:** ferramenta usada, em que trecho ou decisão desta entrega, e o que você conferiu ou alterou depois do resultado gerado (mesmo que a resposta seja "não usei IA nesta entrega", registre isso).
+
+> Usei o Claude para entender melhor os conceitos porque confesso que não entendi quase nada dessa matéria, assim como no último período, rs.
