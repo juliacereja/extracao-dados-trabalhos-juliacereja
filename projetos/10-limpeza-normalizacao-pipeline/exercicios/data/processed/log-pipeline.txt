@@ -1,0 +1,3 @@
+Linhas no bruto: 28
+Linhas duplicadas removidas: 3
+Linhas no processado final: 24
