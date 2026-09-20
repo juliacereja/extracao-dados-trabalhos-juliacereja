@@ -5,7 +5,7 @@ Crie `README.md` dentro de `projetos/13-segmentacao-clusterizacao/` na sua pasta
 
 **Fonte, período e tamanho da coleta:**
 
-> Posts do TikTok coletados através do Zeeschuimer, em agosto de 2026, com 1416 posts.
+> Posts do TikTok coletados através do Zeeschuimer, em agosto de 2026, com 1416 posts. O vídeo mais antigo da coleta é de 11/12/2020 e o mais recente de 19/08/2026, com 2077 dias de período coberto.
 
 **As duas variáveis que você criou (a contínua da Parte A e o rótulo da Parte B), com a fórmula/critério de cada uma:**
 
@@ -29,7 +29,11 @@ Crie `README.md` dentro de `projetos/13-segmentacao-clusterizacao/` na sua pasta
 
 **Uma conclusão que os seus dados sustentam** (sem extrapolar para além da sua coleta):
 
-> Escreva aqui.
+> Segundos os dados analisados percebemos que o tamanho da legenda, o número de hashtags e a data da postagem explicam muito pouco ou nada da taxa de engajamento de um vídeo, pelo menos no modelo linear e de árvore, que foram utilizados nessa análise. Seria interessante testar outras features para ver a diferença entre os resultados. 
+> Além disso, pela classificação percebemos que esse modelo erra fortemente para dizer que "não viralizou", o modelo é conservador demais. Esse modelo pode ser até ser útil para uma empresa que não pode apostar em diferentes conteúdos e precisa produzir um post certeiro, porém não seria interessante para uma equipe que precisa apostar em mais de um conteúdo com potencial viral.
+> E quanto aos dados analisados na segmentação percebemos que criadores de conteúdo menos ativos nas redes possuem menos seguidores e um engajamento menor (grupo 0), potencialmente são pessoas que estão começando agora a postar ou que não tem uma rotina de postagem, por outro lado os criadores mais ativos (grupo 2) possuem engajamento razoável, não muito alto, aparentam, pelos dados analisados, ter presença mas não serem bombados ou virais. Percebi também que os criadores com engajamento maior (grupos 1 e 3) não postam com tanta frequencia mas tem presença, as métricas deles refletem que os "poucos" vídeos que postaram tiveram um alcance muito bom. 
+> Na segmentação, os criadores menos ativos na minha coleta apresentaram menos seguidores e menos curtidas. Uma hipótese é que sejam pessoas que estão começando agora a postar ou que não têm uma rotina de postagem, mas não tenho dados sobre a data de criação das contas para confirmar isso. Os criadores mais ativos tiveram engajamento razoável, mas não muito alto, o que sugere que têm presença na plataforma sem que seus vídeos tenham se tornado virais. Já os criadores com maior engajamento aparecem na minha coleta com poucos vídeos, cujas métricas indicam um alcance muito bom. Vale observar que o número de vídeos de cada criador é a contagem dentro da minha amostra, e não do total do perfil, então esse padrão pode refletir a forma como os dados foram coletados e não necessariamente a frequência real de postagem. Nos dados coletados, postar mais não veio acompanhado de maior engajamento, e criadores com poucos vídeos na amostra chegaram a ter as métricas mais altas. Isso é uma associação observada na minha amostra e não permite concluir que a frequência de postagem cause (ou deixe de causar) um perfil viral. 
+> É fundamental esclarecer que os achados se referem apenas aos dados coletados e têm limitações. Os plays não são as impressões reais, pois não temos acesso às métricas de alcance dos criadores, apenas aos dados públicos que qualquer pessoa consegue observar. Os vídeos também têm idades diferentes, e vídeos mais antigos tendem a acumular mais views e curtidas, o que pode distorcer as comparações, além de a coleta ser uma foto de um momento, já que as métricas continuam mudando com o tempo. Por isso, o que apresento são hipóteses dentro da minha coleta, e não conclusões gerais sobre os criadores de maquiagem no TikTok. Para quem quer produzir conteúdo de maquiagem, esta análise permite dizer que, nos dados coletados, o tamanho da legenda, o número de hashtags e a data de postagem não bastam para prever o engajamento, e que postar com mais frequência não garante mais alcance. Ela não permite dizer o que faz um vídeo viralizar, porque o modelo não conseguiu antecipar os vídeos virais e fatores como o público do criador e o próprio conteúdo do vídeo não foram analisados.
 
 **Revisão por pares:** nome do colega **da turma** que revisou, o que ele apontou, e o que você mudou (ou por que não mudou).
 
@@ -37,8 +41,9 @@ Crie `README.md` dentro de `projetos/13-segmentacao-clusterizacao/` na sua pasta
 
 > A partir da revisão do João deixei a explicação da matriz de confusão mais completa e analisei a data mais antiga e mais recente da minha coleta com `min()`e `max()`.
 
-
-
 **Declaração de uso de IA:** ferramenta usada, em que trecho ou decisão, e o que você conferiu ou alterou depois (mesmo que seja "não usei IA nesta entrega"). Lembre: nesta entrega, IA não pode ser usada para gerar o código de análise.
 
-> Nessa entrega não usei IA, mas usei coisas que eu havia feito anteriormente nas aulas 11, 12 e 13.
+> Nessa entrega usei IA para interpretar melhor conceitos e delinear pensamentos, mas não para escrever nem criar códigos. Usei também códigos e análises que eu havia feito anteriormente nas aulas 11, 12 e 13.
+
+**obs para o Mateus**
+Não estou muito confiante com essa minha entrega, mas queria dizer que me esforçei muito para dar conta de me atualizar das 6 aulas que perdi por conta do processo de trainee. Fiz questão de fazer as aulas anteriores e aprender os conceitos em dois dias, foi difícil e imagino que tenham ficado algumas lacunas, mas realmente me esforçei como prometi a você! Não é um obs para ganhar mais nota rs, é para dizer que prometi a você que ia dar conta e foi difícil mas dei meu máximo. Sei que essa análise não está perfeita, mas tentei meu melhor com o tempo que tive e espero não decepcionar :)
