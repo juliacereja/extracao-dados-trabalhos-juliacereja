@@ -21,7 +21,7 @@ Crie `README.md` dentro de `projetos/13-segmentacao-clusterizacao/` na sua pasta
 
 **Parte B — resultado:** a matriz de confusão e uma leitura: a favor de quem o modelo erra?
 
-> A matriz de confusão foi [[319, 0], [34, 1]]: das 35 postagens que realmente viralizaram no conjunto de teste, o modelo identificou apenas 1 e deixou passar 34 sem perceber (recall de aproximadamente 0,03). Por outro lado, das 1 vez em que o modelo apostou em "viral", ele estava certo (precisão de 1,00), mas com uma única aposta essa precisão não é confiável. Ou seja, o modelo erra fortemente a favor de dizer "não viralizou": ele quase nunca aposta em viral, e por isso deixa passar a grande maioria dos posts que realmente bombaram. 
+> A matriz de confusão foi [[VN: 319, FP: 0], [FN: 34, VP: 1]]: das 35 postagens que realmente viralizaram no conjunto de teste, o modelo identificou apenas 1 e deixou passar 34 sem perceber (recall de aproximadamente 0,03). Por outro lado, das 1 vez em que o modelo apostou em "viral", ele estava certo (precisão de 1,00), mas com uma única aposta essa precisão não é confiável. O modelo portanto não teve nenhum falso positivo, e teve 319 verdadeiros negativos. Ou seja, o modelo erra fortemente a favor de dizer "não viralizou": ele quase nunca aposta em viral, visto que ele eixou 34 posts virais passarem despercebidos, e por isso deixa passar a grande maioria dos posts que realmente bombaram. 
 
 **Parte C — resultado:** quantos segmentos, como você escolheu `k`, e a descrição de cada segmento (uma frase com número).
 
@@ -33,7 +33,11 @@ Crie `README.md` dentro de `projetos/13-segmentacao-clusterizacao/` na sua pasta
 
 **Revisão por pares:** nome do colega **da turma** que revisou, o que ele apontou, e o que você mudou (ou por que não mudou).
 
-> Escreva aqui.
+> Revisado por: João Vianna: Você poderia ter detalhado mais o período da coleta, trazendo qual a data de publicação do primeiro vídeo e do último vídeo da amostra. Trazer exatamente o que é cada um desses valores da matriz de confusão (ex: VN: 319). Gostei bastante da análise da matriz, parabéns. Uma mudança que faria era expandir a coleta, ou seja, trazer mais vídeos, tendo que o percentil de viralização usado é o de 90%, ter uma amostra mais robusta garantiria um número maior de vídeos "viralizados” e assim conseguiríamos fazer uma obsevação melhor da eficácia desses modelos.
+
+> A partir da revisão do João deixei a explicação da matriz de confusão mais completa e analisei a data mais antiga e mais recente da minha coleta com `min()`e `max()`.
+
+
 
 **Declaração de uso de IA:** ferramenta usada, em que trecho ou decisão, e o que você conferiu ou alterou depois (mesmo que seja "não usei IA nesta entrega"). Lembre: nesta entrega, IA não pode ser usada para gerar o código de análise.
 
